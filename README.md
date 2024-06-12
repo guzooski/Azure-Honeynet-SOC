@@ -32,28 +32,23 @@ For the "BEFORE" metrics, all resources were originally deployed, exposed to the
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
 
 ## Attack Maps Before Hardening / Security Controls
-![Before_nsg-malicious-allowed-in](https://github.com/guzooski/Azure-Honeynet-SOC/assets/153235937/d62df2c9-12cf-46f7-8673-425f92bf1314)
-![Before_syslog-ssh-auth-fail](https://github.com/guzooski/Azure-Honeynet-SOC/assets/153235937/53a078a6-fd91-46c4-a15e-b532b7826926)
-![Before_windows-rdp-smb-auth-fail](https://github.com/guzooski/Azure-Honeynet-SOC/assets/153235937/fda2432c-cef9-4622-a04f-c21241b92cb2)
-![Before_mssql-auth-fail](https://github.com/guzooski/Azure-Honeynet-SOC/assets/153235937/995182bc-cc8f-41e7-a193-a17dce8aada7)
-
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
-![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png)<br>
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
+![NSG Allowed Inbound Malicious Flows](https://github.com/guzooski/Azure-Honeynet-SOC/assets/153235937/d62df2c9-12cf-46f7-8673-425f92bf1314)<br>
+![Linux Syslog Auth Failures](https://github.com/guzooski/Azure-Honeynet-SOC/assets/153235937/53a078a6-fd91-46c4-a15e-b532b7826926)<br>
+![Windows RDP/SMB Auth Failures](https://github.com/guzooski/Azure-Honeynet-SOC/assets/153235937/fda2432c-cef9-4622-a04f-c21241b92cb2)<br>
 
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2023-03-15 17:04:29
-Stop Time 2023-03-16 17:04:29
+Start Time 2023-06-08 00:27:44
+Stop Time 2023-06-09 00:27:44
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 19470
-| Syslog                   | 3028
-| SecurityAlert            | 10
-| SecurityIncident         | 348
-| AzureNetworkAnalytics_CL | 843
+| SecurityEvent            | 22836
+| Syslog                   | 8601
+| SecurityAlert            | 0
+| SecurityIncident         | 334
+| AzureNetworkAnalytics_CL | ?
 
 ## Attack Maps Before Hardening / Security Controls
 
@@ -62,16 +57,16 @@ Stop Time 2023-03-16 17:04:29
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2023-03-18 15:37
-Stop Time	2023-03-19 15:37
+Start Time 2023-06-14 14:41:58
+Stop Time	2023-06-15 14:41:58
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 8778
+| SecurityEvent            | 6160
 | Syslog                   | 25
 | SecurityAlert            | 0
 | SecurityIncident         | 0
-| AzureNetworkAnalytics_CL | 0
+| AzureNetworkAnalytics_CL | ?
 
 ## Conclusion
 
