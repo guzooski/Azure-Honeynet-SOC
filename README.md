@@ -48,7 +48,7 @@ Stop Time 2023-06-09 00:27:44
 | Syslog                   | 8601
 | SecurityAlert            | 0
 | SecurityIncident         | 334
-| AzureNetworkAnalytics_CL | ?
+| AzureNetworkAnalytics_CL | 800
 
 ## Attack Maps Before Hardening / Security Controls
 
@@ -66,7 +66,7 @@ Stop Time	2023-06-15 14:41:58
 | Syslog                   | 25
 | SecurityAlert            | 0
 | SecurityIncident         | 0
-| AzureNetworkAnalytics_CL | ?
+| AzureNetworkAnalytics_CL | 0
 
 ## Conclusion
 
